@@ -1,54 +1,59 @@
 # Hatem Ismail Shalaby
 
-Operations architect who got tired of watching smart people do dumb manual work. After 28 years in contact centers and workforce management, I started building the tools I wished existed.
+## Operations Architect · AI Systems Engineer · Founder
 
-## What I actually do
+After 28 years in contact-centre operations and workforce management, I build practical systems for operational problems that generic software usually hides.
 
-I turn operational chaos into systems that run themselves. Not the glossy vendor kind — the kind that actually work on a Tuesday at 3 PM when everything's on fire.
+My work is moving from individual automation tools toward **Helix Codex**: an accountable AI operating organization that understands business context, coordinates governed workflows, remembers decisions and outcomes, and improves through evidence without silently taking control.
 
-**The stack I reach for:** Python (Pandas, FastAPI, SQLAlchemy), local LLMs via Ollama/LM Studio, React/Next.js when I need a UI, Tauri for desktop apps. Zero cloud dependencies. Everything runs on a laptop.
+## Current flagship: Helix Codex
 
-## The short version
+The current proving foundation is [Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime).
 
-**2024–2025:** Built five separate tools in private repos — Erlang C forecasting, real-time adherence, NLP churn prediction, B2B onboarding automation, workforce modeling. Each solved one problem well.
+Verified Phase 1 status:
 
-**Mid-2026:** Realized they were all the same system wearing different coats. Merged them into **Helix Prime** — six engines, four local AI agents, one cockpit.
+- controlled-pilot ready;
+- 445 tests passing;
+- governance and security checks passing;
+- synthetic call-centre and restaurant demonstrations;
+- read-only Zendesk, Salesforce, and Clay connector contracts;
+- governed memory and evidence-gated improvement proposals;
+- local-first and cloud-ready interfaces;
+- production remains **NOT_READY** until external evidence and human approval exist.
 
-**Late 2026:** Applied the same thinking to learning. **Study Studio** (local AI tutor), **Helix Education** (event-sourced learning state), **L&D Command Center** (desktop L&D product).
+This is a controlled-pilot prototype, not a production platform or universal AI employee.
 
-## What's public and runnable right now
+## Selected projects
 
-| Repo | What it is | Run it |
-|------|-----------|--------|
-| [Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime) | Unified ops platform — WFM, RTA, churn, onboarding, personnel, CRM + 4 local agents + Streamlit cockpit | `setup.bat` then `launch.bat` — http://127.0.0.1:8501 |
-| [Study Studio](https://github.com/HatemIsmailShalaby1979/Study-Studio) | Local AI tutor: lessons, quizzes, glossaries, podcasts from any topic | `cd apps/desktop && npm install && npm run dev` — http://localhost:3000 |
-| [LIVE Support Assistant](https://github.com/HatemIsmailShalaby1979/LIVE-Support-Assistant) | Keyword-matching support bot for TikTok LIVE. Paste message — get policy + reply | `npm install && npm run dev` — http://localhost:5173 |
-| [L&D Command Center](https://github.com/HatemIsmailShalaby1979/L-D-Command-Center) | Desktop L&D: learning journeys, bilingual podcasts, career tools, media playground | Download release, run locally via LM Studio |
-| [Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education) | Event-sourced learning engine. 447 tests. Alpha — not wired into Prime yet | `pip install -e . && pytest` |
+| Project | What it demonstrates | Status |
+|---|---|---|
+| [Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime) | Governed operations core, cockpit, workflows, memory, evidence, and capability packs | Controlled-pilot ready |
+| [Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education) | Event-sourced learning state and citation-grounded content | Alpha |
+| [Study Studio](https://github.com/HatemIsmailShalaby1979/Study-Studio) | Local AI learning and audio workflows | Actively used; local-first |
+| [L&D Command Center](https://github.com/HatemIsmailShalaby1979/L-D-Command-Center) | Desktop learning, language, career, and media workstation | V1 ship in progress |
+| [LIVE Support Assistant](https://github.com/HatemIsmailShalaby1979/LIVE-Support-Assistant) | Small explainable browser support prototype | Portfolio prototype |
+| [WFM Forecasting Calculator](https://github.com/HatemIsmailShalaby1979/wfm-forecasting-calculator) | Erlang C workforce-planning foundation | Reference precursor |
 
-## The private stuff (precursors to Helix Prime)
+## Engineering philosophy
 
-Five repos I built first, then folded into the unified platform:
+- Local-first development; cloud only when customer value justifies it.
+- Governance before autonomy.
+- Evidence before claims.
+- Human authority at consequential boundaries.
+- Memory with provenance, classification, and tenant isolation.
+- Improvement through evaluated proposals, never silent self-modification.
+- Small, measurable pilots before large infrastructure.
 
-- **wfm-forecasting-calculator** — Erlang C + shrinkage + interval planning + FTE costs
-- **RTA_command_center** — Real-time adherence with auto-alerts and anomaly detection
-- **cx-sentiment-sentinel** — NLP churn prediction + sentiment pipeline
-- **Dynamic-Ops-Automation-Engine** — Client intake → staffing schedule + Notion SOPs in < 60 min
-- **META-COGNITIVE-WFM-ENGINE** — Advanced modeling experiments
+## Career direction
 
-They're private because the code moved. The lessons didn't.
+I am building toward Founder/CTO work at the intersection of operations strategy, customer-success engineering, AI workflow architecture, security and governance, local and cloud systems, and measurable business outcomes.
 
-## What I care about
+The portfolio is intentionally honest: it shows what is verified, what is in progress, and what still requires a real design partner.
 
-- **Local-first.** Your data stays on your machine. Cloud is optional.
-- **Modest hardware.** If it needs a GPU cluster, I didn't design it well enough.
-- **Operational reality.** Every feature started as someone's manual headache.
-- **Learning that compounds.** Tools should teach you while you use them.
+## Contact
 
-## Find me
+[LinkedIn](https://www.linkedin.com/in/hatem-shalaby-202902127/) · [Email](mailto:hatemshalaby2025@gmail.com)
 
-[LinkedIn](https://www.linkedin.com/in/hatem-shalaby-202902127/) — hatem@shalaby.dev
+## License
 
----
-
-*Still building. Still learning. Still annoyed by unnecessary complexity.*
+MIT

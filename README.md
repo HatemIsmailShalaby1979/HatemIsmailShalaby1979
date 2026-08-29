@@ -57,3 +57,6 @@ The portfolio is intentionally honest: it shows what is verified, what is in pro
 ## License
 
 MIT
+## What I'm looking for
+
+I'm open to senior AI-engineer, ML-platform, and founder-advisor roles where governed, evidence-gated automation matters — especially in contact-centre operations, workforce management, and learning systems. I value teams that treat honest "not-ready" signals, auditability, and local-first privacy as features, not blockers. If you're building accountable AI for real operations, I'd like to talk.

@@ -8,7 +8,9 @@ Twenty-eight years in operations, a career switch in April 2026, and a full-time
 
 ## The arc
 
-**The career.** Twenty-eight years in contact-centre operations and workforce management: forecasting, scheduling, real-time adherence, service-level recovery, churn, onboarding, quality. The same problems returned in different companies. Forecasting done by hand in spreadsheets. Tools that did not talk to each other. Decisions made under pressure with no record of why.
+**The foundation, 1998–2012.** Ground operations and real-time traffic management at Hurghada International Airport, then Air Berlin, where I directed ground operations through the 2011 regional transition and held SLA compliance under conditions that had no playbook. Alongside that, international logistics at Shorouk International Bookshop and hybrid IT operations at Nefertari American School.
+
+**The automation years, 2012–2026.** I built AI-driven automation for contact centres at ByteDance, Vodafone and Uber: NLP pipelines that turn unstructured customer language into signal, Erlang C forecasting that turns volume into staffing, and the reporting layers that made both usable by people on the floor. The same problems returned in different companies. Forecasting done by hand in spreadsheets. Tools that did not talk to each other. Decisions made under pressure with no record of why. The hard part was never the model. It was the handover — who owns the decision, what evidence supports it, and what happens when the system is wrong.
 
 **April 2026.** The career ended and the building began. Full time, solo, self-taught. Not a side project and not a bootcamp. A decision to convert twenty-eight years of operational knowledge into working software, while learning the software part in public.
 
@@ -84,7 +86,20 @@ The portfolio is a body of work in progress, maintained by one person with no te
 
 ## The founder's story
 
-I spent twenty-eight years in contact-centre operations and workforce management. Forecasting, scheduling, adherence, service levels, churn. The same problems appeared in every company I worked in, and none of the tools solved them properly.
+I spent twenty-eight years in operations. The first fourteen were the
+foundation: ground operations and real-time traffic management at Hurghada
+International Airport, then Air Berlin, where I directed ground operations
+through the 2011 regional transition and held SLA compliance under conditions
+that had no playbook. Alongside that, international logistics at Shorouk
+International Bookshop and hybrid IT operations at Nefertari American School.
+
+The second fourteen were about automation. I built AI-driven automation for
+contact centres at ByteDance, Vodafone and Uber: NLP pipelines that turn
+unstructured customer language into signal, Erlang C forecasting that turns
+volume into staffing, and the reporting layers that made both usable by people
+on the floor. The hard part was never the model. It was the handover — who owns
+the decision, what evidence supports it, and what happens when the system is
+wrong.
 
 In April 2026 I left that career and started building full time — alone, and teaching myself to write software as I went. The first four tools were published six weeks later, in May and June 2026. Each one took a single operational problem and solved it properly. They were not impressive. They were correct.
 
@@ -99,6 +114,7 @@ This repository is the index to that work. The work is maintained by one person,
 - GitHub: [HatemIsmailShalaby1979](https://github.com/HatemIsmailShalaby1979)
 - LinkedIn: [hatem-shalaby-202902127](https://www.linkedin.com/in/hatem-shalaby-202902127/)
 - Email: hatemshalaby2025@gmail.com
+- Education: BSc Managerial Sciences (Computer Section), Sadat Academy for Management Sciences; Business Analytics Nanodegree, Udacity
 
 Based in Al Obour City, Al-Qalyubia Governorate, Egypt.
 

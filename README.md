@@ -2,21 +2,23 @@
 
 ## Operations Architect · AI Systems Engineer · Founder
 
-> **Status: this is the index repository. It documents work in progress, not a finished product. Nothing here is production-deployed, externally audited, or revenue-generating.**
+> **Status: this is the portfolio index. It documents work in progress, not a finished product. Nothing here is production-deployed, externally audited, or revenue-generating.**
 
-Twenty-eight years in operations, a career switch in April 2026, and a full-time solo build since. The work is converging on **Helix Codex**, an accountable AI operating organization, with **Helix Prime** as its operations core.
+Twenty-eight years in operations. Fourteen of them building AI-driven automation for contact centres at ByteDance, Vodafone and Uber. A career switch in April 2026, and a full-time solo build since — converging on **Helix Codex**, an accountable AI operating organization, with **Helix Prime** as its operations core.
 
-## The arc
+## The story
 
-**The foundation, 1998–2012.** Ground operations and real-time traffic management at Hurghada International Airport, then Air Berlin, where I directed ground operations through the 2011 regional transition and held SLA compliance under conditions that had no playbook. Alongside that, international logistics at Shorouk International Bookshop and hybrid IT operations at Nefertari American School.
+**1998–2012 — the foundation.** Ground operations and real-time traffic management at Hurghada International Airport, then Air Berlin, where I directed ground operations through the 2011 regional transition and held SLA compliance under conditions that had no playbook. Alongside that, international logistics at Shorouk International Bookshop and hybrid IT operations at Nefertari American School.
 
-**The automation years, 2012–2026.** I built AI-driven automation for contact centres at ByteDance, Vodafone and Uber: NLP pipelines that turn unstructured customer language into signal, Erlang C forecasting that turns volume into staffing, and the reporting layers that made both usable by people on the floor. The same problems returned in different companies. Forecasting done by hand in spreadsheets. Tools that did not talk to each other. Decisions made under pressure with no record of why. The hard part was never the model. It was the handover — who owns the decision, what evidence supports it, and what happens when the system is wrong.
+**2012–2026 — the automation years.** I built AI-driven automation for contact centres at ByteDance, Vodafone and Uber: NLP pipelines that turn unstructured customer language into signal, Erlang C forecasting that turns volume into staffing, and the reporting layers that made both usable by people on the floor. The same problems returned in different companies. Forecasting done by hand in spreadsheets. Tools that did not talk to each other. Decisions made under pressure with no record of why.
 
-**April 2026.** The career ended and the building began. Full time, solo, self-taught. Not a side project and not a bootcamp. A decision to convert twenty-eight years of operational knowledge into working software, while learning the software part in public.
+The lesson from those years is the one this portfolio is built on: **the hard part is never the model. It is the handover** — who owns the decision, what evidence supports it, and what happens when the system is wrong.
 
-**Late May and early June 2026.** The first published work: four small tools, each one a single operational problem solved properly. Erlang C forecasting, real-time adherence monitoring, churn-risk scoring, and an intake-to-readiness pipeline. These are the building attempts. They are honest, they work, and they are the reason the later work is not theoretical.
+**April 2026 — the switch.** I left that career and started building full time. Solo, self-taught, in public. Not a side project and not a bootcamp: a decision to convert twenty-eight years of operational knowledge into working software.
 
-**Late August 2026 onward.** The tools converged into one idea: an accountable AI operating organization with a constitution, named roles with bounded authority, evidence trails, governed memory, and a human at every consequential boundary. Helix Codex is the goal. Everything published since is a component of it or a product built on it.
+**May and June 2026 — the first work.** Four small tools, each solving one operational problem properly: Erlang C forecasting, real-time adherence monitoring, churn-risk scoring, and an intake-to-readiness pipeline. They are not impressive. They are correct, and they are why the later work is not theoretical.
+
+**August 2026 onward — Helix Codex.** The tools converged into one idea: an accountable AI operating organization. Not an autonomous agent. An organization with a constitution, named roles with bounded authority, evidence trails, governed memory, and a human at every consequential boundary.
 
 ## The repositories
 
@@ -26,7 +28,7 @@ Eleven repositories, grouped by role. Every measurement carries the date it was 
 
 | Repository | What it is | Status | Snapshot |
 |---|---|---|---|
-| [Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime) | The governed operations platform. Six engines, nine agents, `helix-api` spine, audit chain, capability packs. | Private, pre-pilot, production `NOT_READY`; 1,758 tests passed / 0 failed; 9 production-only gates red by design | 2026-09-24 |
+| [Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime) | The governed operations platform. Six engines, nine agents, `helix-api` spine, audit chain, capability packs. | Pre-pilot, production `NOT_READY`; 1,758 tests passed / 0 failed; 9 production-only gates red by design | 2026-09-24 |
 
 ### The components
 
@@ -45,7 +47,7 @@ Eleven repositories, grouped by role. Every measurement carries the date it was 
 
 ### The 2026 building attempts
 
-One of the four building attempts from May–June 2026 — the period when I left a twenty-eight-year operations career and started building full time, alone, while teaching myself to write software. The thinking in each was later absorbed into Helix Prime.
+Four small tools, each solving one operational problem properly. The thinking in each was later absorbed into Helix Prime.
 
 | Repository | What it explored | Status |
 |---|---|---|
@@ -76,36 +78,12 @@ Senior AI-engineering, ML-platform, and founder-advisor roles where governed, ev
 
 The portfolio is a body of work in progress, maintained by one person with no team and no funding.
 
-- Helix Prime is private and pre-pilot. Its production status is `NOT_READY`, with nine production-only gates red by design.
+- Helix Prime is pre-pilot. Its production status is `NOT_READY`, with nine production-only gates red by design.
 - No repository here has been externally audited or certified.
 - There is no certified data isolation and no signed security review.
 - There is no legal privacy review.
 - No repository has an assigned on-call owner.
-- Helix Prime's container image has never been built.
 - No revenue has been realised anywhere in the portfolio.
-
-## The founder's story
-
-I spent twenty-eight years in operations. The first fourteen were the
-foundation: ground operations and real-time traffic management at Hurghada
-International Airport, then Air Berlin, where I directed ground operations
-through the 2011 regional transition and held SLA compliance under conditions
-that had no playbook. Alongside that, international logistics at Shorouk
-International Bookshop and hybrid IT operations at Nefertari American School.
-
-The second fourteen were about automation. I built AI-driven automation for
-contact centres at ByteDance, Vodafone and Uber: NLP pipelines that turn
-unstructured customer language into signal, Erlang C forecasting that turns
-volume into staffing, and the reporting layers that made both usable by people
-on the floor. The hard part was never the model. It was the handover — who owns
-the decision, what evidence supports it, and what happens when the system is
-wrong.
-
-In April 2026 I left that career and started building full time — alone, and teaching myself to write software as I went. The first four tools were published six weeks later, in May and June 2026. Each one took a single operational problem and solved it properly. They were not impressive. They were correct.
-
-Those four tools converged into one idea: **Helix Codex**, an accountable AI operating organization. Not an autonomous agent. An organization with a constitution, named roles with bounded authority, evidence trails, and a human at every consequential boundary. Helix Prime is its operations core.
-
-This repository is the index to that work. The work is maintained by one person, with no team and no funding. It has not been externally audited and it has not made revenue. Where it is unfinished, these documents say so.
 
 ## Author
 

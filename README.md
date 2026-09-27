@@ -28,22 +28,22 @@ Eleven repositories, grouped by role. Every measurement carries the date it was 
 
 | Repository | What it is | Status | Snapshot |
 |---|---|---|---|
-| [Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime) | The governed operations platform. Six engines, nine agents, `helix-api` spine, audit chain, capability packs. | Pre-pilot, production `NOT_READY`; 1,758 tests passed / 0 failed; 9 production-only gates red by design | 2026-09-24 |
+| [Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime) | The governed operations platform. Six engines, nine agents, `helix-api` spine, audit chain, capability packs, and a governed public demo (GitHub OAuth via Supabase Auth, a fail-closed gate, rate limits, a read-only audit trail). | Pre-pilot, production `NOT_READY`; 1,897 tests passed / 0 failed; 9 production-only gates red by design; release `v1.1.0` | 2026-09-27 |
 
 ### The components
 
 | Repository | What it is | Status | Snapshot |
 |---|---|---|---|
-| [Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education) | Event-sourced learning engine. The learning foundation Helix Codex would use. | Alpha, research product; 447 tests passing | 2026-08-29 |
+| [Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education) | Event-sourced learning engine. The learning foundation Helix Codex would use. | Alpha, research product; 447 tests collected with zero failures; release `v1.1.0` | 2026-09-27 |
 | [Study Studio](https://github.com/HatemIsmailShalaby1979/Study-Studio) | Local-first AI tutor. Turns a model into study material. | Working, local-first; 46 suites / 973 tests passing; 85.5% statement coverage | 2026-09-24 |
-| [L&D Command Center](https://github.com/HatemIsmailShalaby1979/L-D-Command-Center) | Desktop learning, language, and career workstation. | Working, V1 ship in progress; E2E smoke passed; endpoint auto-detect active | 2026-09-23 |
+| [L&D Command Center](https://github.com/HatemIsmailShalaby1979/L-D-Command-Center) | Desktop learning, language, and career workstation. | Working, V1 ship in progress; endpoint auto-detect active; the E2E smoke run was **mixed** — imports and endpoint checks passed, the window launch was blocked by a tkinter environment problem, and two integrations were untested | 2026-09-23 |
 | [LIVE Support Assistant](https://github.com/HatemIsmailShalaby1979/LIVE-Support-Assistant) | Small explainable support prototype. Deliberately modest. | Shipped public demo; 5 policy entries, keyword matching, no backend | 2026-08-27 |
 
 ### The vertical
 
 | Repository | What it is | Status | Snapshot |
 |---|---|---|---|
-| [Blue Waves](https://github.com/HatemIsmailShalaby1979/Blue-Waves-) | Multi-format content studio. The first commercial vertical of Helix Codex. | Pre-revenue, pipeline verified; 85 tests passing; end-to-end publish verified | 2026-09-05 |
+| [Blue Waves](https://github.com/HatemIsmailShalaby1979/Blue-Waves-) | Multi-format content studio. The first commercial vertical of Helix Codex. | Pre-revenue, pipeline verified; 125 tests passing (109 project + 16 vendored); end-to-end publish verified | 2026-09-27 |
 
 ### The 2026 building attempts
 

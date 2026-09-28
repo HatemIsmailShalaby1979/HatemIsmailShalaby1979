@@ -78,7 +78,7 @@ Two distinct relationships are in play, and the difference matters.
 | [Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education) | Component: learning engine | Independent repo | Designed to supply the learning foundation Helix Codex would use; **not yet wired into the core** | Alpha, 447 tests collected, zero failures |
 | [Study Studio](https://github.com/HatemIsmailShalaby1979/Study-Studio) | Component: local-first tutor | Independent repo | No pipeline wired to Prime today | Working, 46 suites / 973 tests |
 | [L&D Command Center](https://github.com/HatemIsmailShalaby1979/L-D-Command-Center) | Component: desktop workstation | Independent repo | No data flow wired to Prime today | V1 ship in progress |
-| [LIVE Support Assistant](https://github.com/HatemIsmailShalaby1979/LIVE-Support-Assistant) | Component: explainable support | Independent repo, no shared code or runtime with Prime | Its operational signals **could** inform Helix Education's curriculum — designed to consume that feed; **not yet wired** | Prototype, sign-in-gated demo |
+| [LIVE Support Assistant](https://github.com/HatemIsmailShalaby1979/LIVE-Support-Assistant) | Component: explainable support | Independent repo, no shared code or runtime with Prime | Its operational signals **could** inform Helix Education's curriculum — designed to consume that feed; **not yet wired** | Prototype, shadow-mode pilot ready |
 | [Blue Waves](https://github.com/HatemIsmailShalaby1979/Blue-Waves-) | Vertical: content studio | Built on the Helix Codex framework; consumes Prime as an **external client** over its contracts, never embedded | Live client relationship to Prime (HTTP/contracts) | Pre-revenue, pipeline verified |
 | [WFM Forecasting Calculator](https://github.com/HatemIsmailShalaby1979/wfm-forecasting-calculator) | Building attempt | Independent repo | Conceptual only — its Erlang C maths became Prime's WFM engine; no shared code | Sketch, engine self-tests pass |
 | [RTA Command Center](https://github.com/HatemIsmailShalaby1979/RTA_command_center) | Building attempt | Independent repo | Conceptual only — its adherence thinking became Prime's RTA engine; no shared code | Sketch, engine restored |
@@ -108,7 +108,7 @@ Senior AI-engineering, ML-platform, and founder-advisor roles where governed, ev
 | Helix Education | Alpha; 447 tests collected, zero failures | 2026-09-27 |
 | Study Studio | Working; 46 suites / 973 tests; 85.5% statement coverage | 2026-09-24 |
 | L&D Command Center | V1 ship in progress; E2E smoke run was mixed (window launch blocked by a tkinter environment problem; generation exceeded the 60 s budget on that hardware) | 2026-09-23 |
-| LIVE Support Assistant | Prototype; on-device gate re-verified; backend suites pass but not connected to the standalone client | 2026-09-27 |
+| LIVE Support Assistant | Prototype; on-device gate 10/10 checks; deployed-vs-local parity 39/39 identical margins; a contradictory corpus is refused at publish with HTTP 422; backend suites pass but are not wired to the standalone client | 2026-09-28 |
 | Blue Waves | Pre-revenue; 125 tests collected (109 project + 16 vendored); one cockpit E2E test intermittently order-dependent | 2026-09-27 |
 | The four 2026 building attempts | Historical project context, not audited evidence; two are not runnable as committed | 2026-06 / 2026-09-27 |
 

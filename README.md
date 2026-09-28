@@ -1,64 +1,89 @@
+<div align="center">
+
 # Hatem Ismail Shalaby
 
-## Operations Architect · AI Systems Engineer · Founder
+**Operations Architect · AI Systems Engineer · Founder**
 
-> **Status: this is the portfolio index. It documents work in progress, not a finished product. Nothing here is production-deployed, externally audited, or revenue-generating.**
+</div>
 
-Twenty-eight years in operations. Fourteen of them building AI-driven automation for contact centres at ByteDance, Vodafone and Uber. A career switch in April 2026, and a full-time solo build since — converging on **Helix Codex**, an accountable AI operating organization, with **Helix Prime** as its operations core.
+> [!NOTE]
+> Deterministic where a decision has consequences, audited so any action can be replayed, and fail-closed by default. On missing input or missing authority, the system refuses rather than guesses.
 
-## The story
+## The operating rule
 
-**1998–2012 — the foundation.** Ground operations and real-time traffic management at Hurghada International Airport, then Air Berlin, where I directed ground operations through the 2011 regional transition and held SLA compliance under conditions that had no playbook. Alongside that, international logistics at Shorouk International Bookshop and hybrid IT operations at Nefertari American School.
+I spent three decades on the operational floor — aviation ground control, telecom
+support, and contact-centre workforce management. The lesson that survived every one
+of those jobs is that the hard part is never the model. It is the handover: who owns
+the decision, what evidence supports it, and what happens when the system is wrong.
 
-**2012–2026 — the automation years.** I built AI-driven automation for contact centres at ByteDance, Vodafone and Uber: NLP pipelines that turn unstructured customer language into signal, Erlang C forecasting that turns volume into staffing, and the reporting layers that made both usable by people on the floor. The same problems returned in different companies. Forecasting done by hand in spreadsheets. Tools that did not talk to each other. Decisions made under pressure with no record of why.
+So everything here is built on one rule. **Deterministic where a decision has
+consequences, audited so any action can be replayed, and fail-closed by default** — on
+missing input or missing authority, the system refuses rather than guesses. A
+generative model may help a person think, but it never sits alone in the path that
+executes.
 
-The lesson from those years is the one this portfolio is built on: **the hard part is never the model. It is the handover** — who owns the decision, what evidence supports it, and what happens when the system is wrong.
+## The founder's story
 
-**April 2026 — the switch.** I left that career and started building full time. Solo, self-taught, in public. Not a side project and not a bootcamp: a decision to convert twenty-eight years of operational knowledge into working software.
+I spent twenty-eight years in operations. The first fourteen were the foundation:
+ground operations and real-time traffic management at Hurghada International
+Airport, then Air Berlin, where I directed ground operations through the 2011
+regional transition and held SLA compliance under conditions that had no playbook.
+Alongside that, international logistics at Shorouk International Bookshop and hybrid
+IT operations at Nefertari American School.
 
-**May and June 2026 — the first work.** Four small tools, each solving one operational problem properly: Erlang C forecasting, real-time adherence monitoring, churn-risk scoring, and an intake-to-readiness pipeline. They are not impressive. They are correct, and they are why the later work is not theoretical.
+The second fourteen were about automation. I built AI-driven automation for contact
+centres at ByteDance, Vodafone and Uber: NLP pipelines that turn unstructured
+customer language into signal, Erlang C forecasting that turns volume into staffing,
+and the reporting layers that made both usable by people on the floor. The hard part
+was never the model. It was the handover — who owns the decision, what evidence
+supports it, and what happens when the system is wrong.
 
-**August 2026 onward — Helix Codex.** The tools converged into one idea: an accountable AI operating organization. Not an autonomous agent. An organization with a constitution, named roles with bounded authority, evidence trails, governed memory, and a human at every consequential boundary.
+In April 2026 I left that career and started building full time, alone, teaching
+myself to write software as I went. The first four tools were published six weeks
+later, in May and June 2026. Each one took a single operational problem and solved
+it properly. They were not impressive. They were correct.
 
-## The repositories
+Those four tools converged into one idea: **Helix Codex**, an accountable AI
+operating organization. Not an autonomous agent. An organization with a
+constitution, named roles with bounded authority, evidence trails, and a human at
+every consequential boundary. Helix Prime is its operations core.
 
-Eleven repositories, grouped by role. Every measurement carries the date it was taken.
+This work is maintained by one person, with no team and no funding. It has not been
+externally audited and it has not made revenue. Where it is unfinished, the
+documents say so.
 
-### The core
+## Helix Prime is the centre
 
-| Repository | What it is | Status | Snapshot |
-|---|---|---|---|
-| [Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime) | The governed operations platform. Six engines, nine agents, `helix-api` spine, audit chain, capability packs, and a governed public demo (GitHub OAuth via Supabase Auth, a fail-closed gate, rate limits, a read-only audit trail). | Pre-pilot, production `NOT_READY`; 1,897 tests passed / 0 failed; 9 production-only gates red by design; release `v1.1.0` | 2026-09-27 |
+Helix Prime is the operations core of Helix Codex. It is a local-first platform that
+owns the parts that must be governed in one place:
 
-### The components
+- Identity and authentication, with role-based access control (RBAC) that defaults to deny.
+- The Erlang C forecasting core — the same staffing maths the May–June 2026 building attempts first sketched.
+- The CRM, the workflow engine, and the event-sourced memory that records what happened and why.
+- The fail-closed governance gate that evaluates every submission before execution: cost against the acting role's approval limit, data classification against what the role may read, confidence, and engine ownership. It returns dead-letter, awaiting-approval, or executing — and on a miss it refuses, it does not guess.
 
-| Repository | What it is | Status | Snapshot |
-|---|---|---|---|
-| [Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education) | Event-sourced learning engine. The learning foundation Helix Codex would use. | Alpha, research product; 447 tests collected with zero failures; release `v1.1.0` | 2026-09-27 |
-| [Study Studio](https://github.com/HatemIsmailShalaby1979/Study-Studio) | Local-first AI tutor. Turns a model into study material. | Working, local-first; 46 suites / 973 tests passing; 85.5% statement coverage | 2026-09-24 |
-| [L&D Command Center](https://github.com/HatemIsmailShalaby1979/L-D-Command-Center) | Desktop learning, language, and career workstation. | Working, V1 ship in progress; endpoint auto-detect active; the E2E smoke run was **mixed** — imports and endpoint checks passed, the window launch was blocked by a tkinter environment problem, and two integrations were untested | 2026-09-23 |
-| [LIVE Support Assistant](https://github.com/HatemIsmailShalaby1979/LIVE-Support-Assistant) | Small explainable support prototype. Deliberately modest. | Shipped public demo; 5 policy entries, keyword matching, no backend | 2026-08-27 |
+Everything else in the portfolio is a satellite of this core. Some are components that supply a capability Helix Codex would use. One is a commercial vertical built on the framework. Four are the building attempts whose thinking was absorbed into Prime itself.
 
-### The vertical
+## How the satellites relate to the core
 
-| Repository | What it is | Status | Snapshot |
-|---|---|---|---|
-| [Blue Waves](https://github.com/HatemIsmailShalaby1979/Blue-Waves-) | Multi-format content studio. The first commercial vertical of Helix Codex. | Pre-revenue, pipeline verified; 125 tests passing (109 project + 16 vendored); end-to-end publish verified | 2026-09-27 |
+Two distinct relationships are in play, and the difference matters.
 
-### The 2026 building attempts
+**Code relationship.** Every repository in this portfolio is a separate codebase by design. Helix Prime enforces "versioned sibling-service event contracts with no cross-repository imports" — the services talk through published contracts, not shared source. That separation is an architecture decision, not a gap: a tangled monolith would have made the fail-closed boundary harder to prove, not easier. Where a repository depends on the framework, it does so as an external client over those contracts, never by embedding Prime's code.
 
-Four small tools, each solving one operational problem properly. The thinking in each was later absorbed into Helix Prime.
+**Data relationship.** Most of these are not wired to each other yet. Where a data flow is real and shipping, it is named as such below. Where it is a design intent — the shape of a future pipeline — it is labelled "designed to; not yet wired" so a reader does not mistake a plan for a live feed.
 
-| Repository | What it explored | Status |
-|---|---|---|
-| [WFM Forecasting Calculator](https://github.com/HatemIsmailShalaby1979/wfm-forecasting-calculator) | Erlang C forecasting. The mathematical foundation that later became Helix Prime's WFM engine. | Reference implementation; historical project context, not audited evidence |
-| [RTA Command Center](https://github.com/HatemIsmailShalaby1979/RTA_command_center) | Real-time adherence monitoring. The operational monitoring problem, solved small. | Building attempt; historical project context, not audited evidence |
-| [CX Sentiment Sentinel](https://github.com/HatemIsmailShalaby1979/cx-sentiment-sentinel) | Churn-risk scoring from support signals. Became the thinking behind Helix Prime's CX engine. | Building attempt; historical project context, not audited evidence |
-| [Dynamic Ops Automation Engine](https://github.com/HatemIsmailShalaby1979/Dynamic-Ops-Automation-Engine) | Intake-to-operational-readiness. Became Helix Prime's B2B Onboarding and WFM engines. | Building attempt; historical project context, not audited evidence |
-
-### The index
-
-This repository. The front door to the whole body of work.
+| Repository | Role in the story | Code relationship | Data relationship to the core | State |
+|---|---|---|---|---|
+| [Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime) | The operations core | — | Owns identity, RBAC, forecasting, CRM, the gate | Pre-pilot, production `NOT_READY` |
+| [Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education) | Component: learning engine | Independent repo | Designed to supply the learning foundation Helix Codex would use; **not yet wired into the core** | Alpha, 447 tests collected, zero failures |
+| [Study Studio](https://github.com/HatemIsmailShalaby1979/Study-Studio) | Component: local-first tutor | Independent repo | No pipeline wired to Prime today | Working, 46 suites / 973 tests |
+| [L&D Command Center](https://github.com/HatemIsmailShalaby1979/L-D-Command-Center) | Component: desktop workstation | Independent repo | No data flow wired to Prime today | V1 ship in progress |
+| [LIVE Support Assistant](https://github.com/HatemIsmailShalaby1979/LIVE-Support-Assistant) | Component: explainable support | Independent repo, no shared code or runtime with Prime | Its operational signals **could** inform Helix Education's curriculum — designed to consume that feed; **not yet wired** | Prototype, sign-in-gated demo |
+| [Blue Waves](https://github.com/HatemIsmailShalaby1979/Blue-Waves-) | Vertical: content studio | Built on the Helix Codex framework; consumes Prime as an **external client** over its contracts, never embedded | Live client relationship to Prime (HTTP/contracts) | Pre-revenue, pipeline verified |
+| [WFM Forecasting Calculator](https://github.com/HatemIsmailShalaby1979/wfm-forecasting-calculator) | Building attempt | Independent repo | Conceptual only — its Erlang C maths became Prime's WFM engine; no shared code | Sketch, engine self-tests pass |
+| [RTA Command Center](https://github.com/HatemIsmailShalaby1979/RTA_command_center) | Building attempt | Independent repo | Conceptual only — its adherence thinking became Prime's RTA engine; no shared code | Sketch, engine restored |
+| [CX Sentiment Sentinel](https://github.com/HatemIsmailShalaby1979/cx-sentiment-sentinel) | Building attempt | Independent repo | Conceptual only — its KPI-decay risk scorer became Prime's CX engine; no shared code | Sketch, not runnable as committed |
+| [Dynamic Ops Automation Engine](https://github.com/HatemIsmailShalaby1979/Dynamic-Ops-Automation-Engine) | Building attempt | Independent repo | Conceptual only — its tenant model and fail-closed config became Prime's B2B and WFM engines; no shared code | Sketch, no tests |
 
 ## How I build
 
@@ -74,16 +99,18 @@ This repository. The front door to the whole body of work.
 
 Senior AI-engineering, ML-platform, and founder-advisor roles where governed, evidence-gated automation matters, especially in contact-centre operations, workforce management, and learning systems. I value teams that treat honest "not-ready" signals, auditability, and local-first privacy as features rather than blockers.
 
-## Honest boundary
+> [!WARNING]
+> **Status — gathered in one place.** None of these has been externally audited or certified. No repository has certified data isolation, a signed security review, or an assigned on-call owner. No revenue has been realised anywhere in the portfolio. Stating this once is the point: a portfolio that hides its unfinished edges is worth less to the person reading it.
 
-The portfolio is a body of work in progress, maintained by one person with no team and no funding.
-
-- Helix Prime is pre-pilot. Its production status is `NOT_READY`, with nine production-only gates red by design.
-- No repository here has been externally audited or certified.
-- There is no certified data isolation and no signed security review.
-- There is no legal privacy review.
-- No repository has an assigned on-call owner.
-- No revenue has been realised anywhere in the portfolio.
+| Repository | Status | Snapshot |
+|---|---|---|
+| Helix Prime | Pre-pilot; 1,897 tests passed / 0 failed; 9 production-only gates red by design | 2026-09-27 |
+| Helix Education | Alpha; 447 tests collected, zero failures | 2026-09-27 |
+| Study Studio | Working; 46 suites / 973 tests; 85.5% statement coverage | 2026-09-24 |
+| L&D Command Center | V1 ship in progress; E2E smoke run was mixed (window launch blocked by a tkinter environment problem; generation exceeded the 60 s budget on that hardware) | 2026-09-23 |
+| LIVE Support Assistant | Prototype; on-device gate re-verified; backend suites pass but not connected to the standalone client | 2026-09-27 |
+| Blue Waves | Pre-revenue; 125 tests collected (109 project + 16 vendored); one cockpit E2E test intermittently order-dependent | 2026-09-27 |
+| The four 2026 building attempts | Historical project context, not audited evidence; two are not runnable as committed | 2026-06 / 2026-09-27 |
 
 ## Author
 

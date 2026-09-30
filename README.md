@@ -13,9 +13,12 @@
 
 [![CI](https://github.com/HatemIsmailShalaby1979/Helix-Prime/actions/workflows/ci.yml/badge.svg)](https://github.com/HatemIsmailShalaby1979/Helix-Prime/actions/workflows/ci.yml)
 
-- **Helix Prime, the flagship:** pre-pilot, production **`NOT_READY`**. CI green on all 17 steps; 1,897 tests passed / 0 failed at 86.9% coverage; all six engines drive a real computation end-to-end. Snapshot 2026-09-30.
-- **The portfolio:** one person's self-funded work — no revenue, no external audit. Where it is unfinished, the documents say so.
+- **Helix Prime, the flagship:** CI green on all 17 steps; 1,897 tests passed / 0 failed at 86.9% coverage; all six engines drive a real computation end-to-end. Snapshot 2026-09-30.
+- **The portfolio:** one person's self-funded work. Where it is unfinished, the documents say so.
 - **Looking for one design partner for a shadow-mode pilot.** The [pilot protocol](https://github.com/HatemIsmailShalaby1979/Helix-Prime/blob/main/docs/release/pilot-protocol.md) defines the boundaries; the [evidence pack](https://github.com/HatemIsmailShalaby1979/Helix-Prime/blob/main/docs/portfolio/00_INDEX.md) shows what exists today.
+
+> [!WARNING]
+> **Honest boundary.** Helix Prime is pre-pilot, production `NOT_READY`, with nine production-only gates red by design. No repository here has been externally audited or certified; none has certified data isolation, a signed security review, or an assigned on-call owner. There is no legal privacy review. No revenue has been realised anywhere in the portfolio. This is not a production deployment claim.
 
 ## A two-minute tour
 

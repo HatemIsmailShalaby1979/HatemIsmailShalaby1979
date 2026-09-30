@@ -101,7 +101,7 @@ Two distinct relationships are in play, and the difference matters.
 | Repository | Role in the story | State |
 |---|---|---|
 | [Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime) | The operations core | Pre-pilot, production `NOT_READY` |
-| [Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education) | Component: learning engine | Alpha, 447 tests collected, zero failures |
+| [Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education) | Component: learning engine | Alpha, 447 tests passed / 0 failed on CI |
 | [Study Studio](https://github.com/HatemIsmailShalaby1979/Study-Studio) | Component: local-first tutor | Working, 46 suites / 973 tests |
 | [L&D Command Center](https://github.com/HatemIsmailShalaby1979/L-D-Command-Center) | Component: desktop workstation | V1 ship in progress |
 | [LIVE Support Assistant](https://github.com/HatemIsmailShalaby1979/LIVE-Support-Assistant) | Component: explainable support | Prototype, shadow-mode pilot ready |
@@ -112,11 +112,11 @@ Two distinct relationships are in play, and the difference matters.
 
 **[Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime)** — the operations core. Owns identity and RBAC, the Erlang C forecasting core, the CRM, the workflow engine, the event-sourced memory, and the fail-closed governance gate. Pre-pilot; CI green on all 17 steps; 1,897 tests passed / 0 failed at 86.9% coverage; all six engines drive a real computation end-to-end; 9 production-only gates red by design; release `v1.1.0`. Snapshot 2026-09-30.
 
-**[Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education)** — component: learning engine. Independent repo. Designed to supply the learning foundation Helix Codex would use; **not yet wired into the core**. Alpha; 447 tests collected, zero failures. Snapshot 2026-09-27.
+**[Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education)** — component: learning engine. Independent repo. Designed to supply the learning foundation Helix Codex would use; **not yet wired into the core**. Alpha; 447 tests passed / 0 failed on CI (run 2026-09-28). Snapshot 2026-09-28.
 
 **[Study Studio](https://github.com/HatemIsmailShalaby1979/Study-Studio)** — component: local-first tutor. Independent repo. No pipeline wired to Prime today. Working; 46 suites / 973 tests; 85.5% statement coverage. Snapshot 2026-09-24.
 
-**[L&D Command Center](https://github.com/HatemIsmailShalaby1979/L-D-Command-Center)** — component: desktop workstation. Independent repo. No data flow wired to Prime today. V1 ship in progress; the E2E smoke run was mixed (window launch blocked by a tkinter environment problem; generation exceeded the 60 s budget on that hardware). Snapshot 2026-09-23.
+**[L&D Command Center](https://github.com/HatemIsmailShalaby1979/L-D-Command-Center)** — component: desktop workstation. Independent repo. No data flow wired to Prime today. V1 ship in progress; the E2E smoke run was mixed (window launch blocked by a tkinter environment problem; generation exceeded the 60 s budget on that hardware; two integrations untested). Snapshot 2026-09-23.
 
 **[LIVE Support Assistant](https://github.com/HatemIsmailShalaby1979/LIVE-Support-Assistant)** — component: explainable support. Independent repo, no shared code or runtime with Prime. Its operational signals could inform Helix Education's curriculum — designed to consume that feed; **not yet wired**. Prototype; on-device gate 10/10 checks; deployed-vs-local parity 39/39 identical margins; a contradictory corpus is refused at publish with HTTP 422; backend suites pass but are not wired to the standalone client. Snapshot 2026-09-28.
 

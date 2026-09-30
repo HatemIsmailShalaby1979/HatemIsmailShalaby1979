@@ -22,9 +22,13 @@
 
 ## A two-minute tour
 
-A narrated two-minute walkthrough of the portfolio — the core, the components, and the evidence standard. If the player does not render, [watch the file directly](assets/portfolio-2min-narrated.mp4).
+A narrated two-minute walkthrough of the portfolio — the core, the components, and the evidence standard.
 
-<video src="assets/portfolio-2min-narrated.mp4" controls muted width="100%"></video>
+<!-- TODO(Hatem): paste GitHub user-attachments video URL on its own line here -->
+
+<!-- TODO(Hatem): fallback line once the URL exists — uncomment and fill in:
+[Watch the two-minute tour](PASTE_VIDEO_URL_HERE)
+-->
 
 ## The operating rule
 

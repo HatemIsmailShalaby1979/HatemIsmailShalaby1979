@@ -104,7 +104,7 @@ Senior AI-engineering, ML-platform, and founder-advisor roles where governed, ev
 
 | Repository | Status | Snapshot |
 |---|---|---|
-| Helix Prime | Pre-pilot; CI green on all 17 steps; 1,897 tests passed / 0 failed at 86.9% coverage; 9 production-only gates red by design | 2026-09-29 |
+| Helix Prime | Pre-pilot; CI green on all 17 steps; 1,897 tests passed / 0 failed at 86.9% coverage; all six engines drive a real computation end-to-end; 9 production-only gates red by design; release `v1.1.0` | 2026-09-30 |
 | Helix Education | Alpha; 447 tests collected, zero failures | 2026-09-27 |
 | Study Studio | Working; 46 suites / 973 tests; 85.5% statement coverage | 2026-09-24 |
 | L&D Command Center | V1 ship in progress; E2E smoke run was mixed (window launch blocked by a tkinter environment problem; generation exceeded the 60 s budget on that hardware) | 2026-09-23 |

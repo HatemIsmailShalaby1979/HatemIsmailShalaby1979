@@ -9,9 +9,23 @@
 > [!NOTE]
 > Deterministic where a decision has consequences, audited so any action can be replayed, and fail-closed by default. On missing input or missing authority, the system refuses rather than guesses.
 
+## Status at a glance
+
+[![CI](https://github.com/HatemIsmailShalaby1979/Helix-Prime/actions/workflows/ci.yml/badge.svg)](https://github.com/HatemIsmailShalaby1979/Helix-Prime/actions/workflows/ci.yml)
+
+- **Helix Prime, the flagship:** pre-pilot, production **`NOT_READY`**. CI green on all 17 steps; 1,897 tests passed / 0 failed at 86.9% coverage; all six engines drive a real computation end-to-end. Snapshot 2026-09-30.
+- **The portfolio:** one person's self-funded work — no revenue, no external audit. Where it is unfinished, the documents say so.
+- **Looking for one design partner for a shadow-mode pilot.** The [pilot protocol](https://github.com/HatemIsmailShalaby1979/Helix-Prime/blob/main/docs/release/pilot-protocol.md) defines the boundaries; the [evidence pack](https://github.com/HatemIsmailShalaby1979/Helix-Prime/blob/main/docs/portfolio/00_INDEX.md) shows what exists today.
+
+## A two-minute tour
+
+A narrated two-minute walkthrough of the portfolio — the core, the components, and the evidence standard. If the player does not render, [watch the file directly](assets/portfolio-2min-narrated.mp4).
+
+<video src="assets/portfolio-2min-narrated.mp4" controls muted width="100%"></video>
+
 ## The operating rule
 
-I spent three decades on the operational floor — aviation ground control, telecom
+I spent twenty-eight years on the operational floor — aviation ground control, telecom
 support, and contact-centre workforce management. The lesson that survived every one
 of those jobs is that the hard part is never the model. It is the handover: who owns
 the decision, what evidence supports it, and what happens when the system is wrong.
@@ -31,17 +45,20 @@ regional transition and held SLA compliance under conditions that had no playboo
 Alongside that, international logistics at Shorouk International Bookshop and hybrid
 IT operations at Nefertari American School.
 
-The second fourteen were about automation. I built AI-driven automation for contact
-centres at ByteDance, Vodafone and Uber: NLP pipelines that turn unstructured
-customer language into signal, Erlang C forecasting that turns volume into staffing,
-and the reporting layers that made both usable by people on the floor. The hard part
-was never the model. It was the handover — who owns the decision, what evidence
-supports it, and what happens when the system is wrong.
+The second fourteen were about automation. At ByteDance, Vodafone and Uber I built
+AI-driven automation for contact centres — inside other people's stacks: NLP
+pipelines that turn unstructured customer language into signal, Erlang C forecasting
+that turns volume into staffing, and the reporting layers that made both usable by
+people on the floor. I owned the handover in those systems, but the platform, the
+codebase and the roadmap were never mine.
 
-In April 2026 I left that career and started building full time, alone, teaching
-myself to write software as I went. The first four tools were published six weeks
-later, in May and June 2026. Each one took a single operational problem and solved
-it properly. They were not impressive. They were correct.
+In April 2026 I left that career. The switch was not from operations to software — I
+had been building inside operational software for fourteen years. It was from
+building inside other people's stacks to owning a full system end to end: my own
+architecture, my own code, my own consequences. I taught myself the remaining craft
+as I built. The first four tools were published six weeks later, in May and June
+2026. Each one took a single operational problem and solved it properly. They were
+not impressive. They were correct.
 
 Those four tools converged into one idea: **Helix Codex**, an accountable AI
 operating organization. Not an autonomous agent. An organization with a
@@ -70,20 +87,35 @@ Two distinct relationships are in play, and the difference matters.
 
 **Code relationship.** Every repository in this portfolio is a separate codebase by design. Helix Prime enforces "versioned sibling-service event contracts with no cross-repository imports" — the services talk through published contracts, not shared source. That separation is an architecture decision, not a gap: a tangled monolith would have made the fail-closed boundary harder to prove, not easier. Where a repository depends on the framework, it does so as an external client over those contracts, never by embedding Prime's code.
 
-**Data relationship.** Most of these are not wired to each other yet. Where a data flow is real and shipping, it is named as such below. Where it is a design intent — the shape of a future pipeline — it is labelled "designed to; not yet wired" so a reader does not mistake a plan for a live feed.
+**Data relationship.** Most of these are not wired to each other yet. Where a data flow is real and shipping, it is named as such in the details below. Where it is a design intent — the shape of a future pipeline — it is labelled "designed to; not yet wired" so a reader does not mistake a plan for a live feed.
 
-| Repository | Role in the story | Code relationship | Data relationship to the core | State |
-|---|---|---|---|---|
-| [Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime) | The operations core | — | Owns identity, RBAC, forecasting, CRM, the gate | Pre-pilot, production `NOT_READY` |
-| [Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education) | Component: learning engine | Independent repo | Designed to supply the learning foundation Helix Codex would use; **not yet wired into the core** | Alpha, 447 tests collected, zero failures |
-| [Study Studio](https://github.com/HatemIsmailShalaby1979/Study-Studio) | Component: local-first tutor | Independent repo | No pipeline wired to Prime today | Working, 46 suites / 973 tests |
-| [L&D Command Center](https://github.com/HatemIsmailShalaby1979/L-D-Command-Center) | Component: desktop workstation | Independent repo | No data flow wired to Prime today | V1 ship in progress |
-| [LIVE Support Assistant](https://github.com/HatemIsmailShalaby1979/LIVE-Support-Assistant) | Component: explainable support | Independent repo, no shared code or runtime with Prime | Its operational signals **could** inform Helix Education's curriculum — designed to consume that feed; **not yet wired** | Prototype, shadow-mode pilot ready |
-| [Blue Waves](https://github.com/HatemIsmailShalaby1979/Blue-Waves-) | Vertical: content studio | Built on the Helix Codex framework; consumes Prime as an **external client** over its contracts, never embedded | Live client relationship to Prime (HTTP/contracts) | Pre-revenue, pipeline verified |
-| [WFM Forecasting Calculator](https://github.com/HatemIsmailShalaby1979/wfm-forecasting-calculator) | Building attempt | Independent repo | Conceptual only — its Erlang C maths became Prime's WFM engine; no shared code | Sketch, engine self-tests pass |
-| [RTA Command Center](https://github.com/HatemIsmailShalaby1979/RTA_command_center) | Building attempt | Independent repo | Conceptual only — its adherence thinking became Prime's RTA engine; no shared code | Sketch, engine restored |
-| [CX Sentiment Sentinel](https://github.com/HatemIsmailShalaby1979/cx-sentiment-sentinel) | Building attempt | Independent repo | Conceptual only — its KPI-decay risk scorer became Prime's CX engine; no shared code | Sketch, not runnable as committed |
-| [Dynamic Ops Automation Engine](https://github.com/HatemIsmailShalaby1979/Dynamic-Ops-Automation-Engine) | Building attempt | Independent repo | Conceptual only — its tenant model and fail-closed config became Prime's B2B and WFM engines; no shared code | Sketch, no tests |
+## The portfolio
+
+| Repository | Role in the story | State |
+|---|---|---|
+| [Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime) | The operations core | Pre-pilot, production `NOT_READY` |
+| [Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education) | Component: learning engine | Alpha, 447 tests collected, zero failures |
+| [Study Studio](https://github.com/HatemIsmailShalaby1979/Study-Studio) | Component: local-first tutor | Working, 46 suites / 973 tests |
+| [L&D Command Center](https://github.com/HatemIsmailShalaby1979/L-D-Command-Center) | Component: desktop workstation | V1 ship in progress |
+| [LIVE Support Assistant](https://github.com/HatemIsmailShalaby1979/LIVE-Support-Assistant) | Component: explainable support | Prototype, shadow-mode pilot ready |
+| [Blue Waves](https://github.com/HatemIsmailShalaby1979/Blue-Waves-) | Vertical: content studio | Pre-revenue, pipeline verified |
+| The four 2026 building attempts | History — thinking absorbed into Prime | Historical context; two not runnable as committed |
+
+### Details
+
+**[Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime)** — the operations core. Owns identity and RBAC, the Erlang C forecasting core, the CRM, the workflow engine, the event-sourced memory, and the fail-closed governance gate. Pre-pilot; CI green on all 17 steps; 1,897 tests passed / 0 failed at 86.9% coverage; all six engines drive a real computation end-to-end; 9 production-only gates red by design; release `v1.1.0`. Snapshot 2026-09-30.
+
+**[Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education)** — component: learning engine. Independent repo. Designed to supply the learning foundation Helix Codex would use; **not yet wired into the core**. Alpha; 447 tests collected, zero failures. Snapshot 2026-09-27.
+
+**[Study Studio](https://github.com/HatemIsmailShalaby1979/Study-Studio)** — component: local-first tutor. Independent repo. No pipeline wired to Prime today. Working; 46 suites / 973 tests; 85.5% statement coverage. Snapshot 2026-09-24.
+
+**[L&D Command Center](https://github.com/HatemIsmailShalaby1979/L-D-Command-Center)** — component: desktop workstation. Independent repo. No data flow wired to Prime today. V1 ship in progress; the E2E smoke run was mixed (window launch blocked by a tkinter environment problem; generation exceeded the 60 s budget on that hardware). Snapshot 2026-09-23.
+
+**[LIVE Support Assistant](https://github.com/HatemIsmailShalaby1979/LIVE-Support-Assistant)** — component: explainable support. Independent repo, no shared code or runtime with Prime. Its operational signals could inform Helix Education's curriculum — designed to consume that feed; **not yet wired**. Prototype; on-device gate 10/10 checks; deployed-vs-local parity 39/39 identical margins; a contradictory corpus is refused at publish with HTTP 422; backend suites pass but are not wired to the standalone client. Snapshot 2026-09-28.
+
+**[Blue Waves](https://github.com/HatemIsmailShalaby1979/Blue-Waves-)** — vertical: content studio. Built on the Helix Codex framework; consumes Prime as an **external client** over its contracts, never embedded. Live client relationship to Prime (HTTP/contracts). Pre-revenue; 125 tests collected (109 project + 16 vendored); one cockpit E2E test intermittently order-dependent. Snapshot 2026-09-27.
+
+**The four 2026 building attempts** — [WFM Forecasting Calculator](https://github.com/HatemIsmailShalaby1979/wfm-forecasting-calculator), [RTA Command Center](https://github.com/HatemIsmailShalaby1979/RTA_command_center), [CX Sentiment Sentinel](https://github.com/HatemIsmailShalaby1979/cx-sentiment-sentinel), [Dynamic Ops Automation Engine](https://github.com/HatemIsmailShalaby1979/Dynamic-Ops-Automation-Engine). Historical project context, not audited evidence; two are not runnable as committed. Their Erlang C maths, adherence thinking, KPI-decay risk scoring, and tenant/fail-closed configuration became Prime's WFM, RTA, CX, and B2B engines respectively — conceptual lineage, no shared code. Snapshot 2026-06 / 2026-09-27.
 
 ## How I build
 
@@ -97,20 +129,19 @@ Two distinct relationships are in play, and the difference matters.
 
 ## What I am looking for
 
-Senior AI-engineering, ML-platform, and founder-advisor roles where governed, evidence-gated automation matters, especially in contact-centre operations, workforce management, and learning systems. I value teams that treat honest "not-ready" signals, auditability, and local-first privacy as features rather than blockers.
+**Looking for one design partner for a shadow-mode pilot.** If you run a contact
+centre, an academy, or any operation where an AI-assisted decision has
+consequences, I will deploy a governed pilot in shadow mode: the system proposes,
+your people approve, every action is replayable. The [pilot
+protocol](https://github.com/HatemIsmailShalaby1979/Helix-Prime/blob/main/docs/release/pilot-protocol.md)
+defines the boundaries; the [evidence
+pack](https://github.com/HatemIsmailShalaby1979/Helix-Prime/blob/main/docs/portfolio/00_INDEX.md)
+shows what exists today.
 
-> [!WARNING]
-> **Status — gathered in one place.** None of these has been externally audited or certified. No repository has certified data isolation, a signed security review, or an assigned on-call owner. No revenue has been realised anywhere in the portfolio. Stating this once is the point: a portfolio that hides its unfinished edges is worth less to the person reading it.
-
-| Repository | Status | Snapshot |
-|---|---|---|
-| Helix Prime | Pre-pilot; CI green on all 17 steps; 1,897 tests passed / 0 failed at 86.9% coverage; all six engines drive a real computation end-to-end; 9 production-only gates red by design; release `v1.1.0` | 2026-09-30 |
-| Helix Education | Alpha; 447 tests collected, zero failures | 2026-09-27 |
-| Study Studio | Working; 46 suites / 973 tests; 85.5% statement coverage | 2026-09-24 |
-| L&D Command Center | V1 ship in progress; E2E smoke run was mixed (window launch blocked by a tkinter environment problem; generation exceeded the 60 s budget on that hardware) | 2026-09-23 |
-| LIVE Support Assistant | Prototype; on-device gate 10/10 checks; deployed-vs-local parity 39/39 identical margins; a contradictory corpus is refused at publish with HTTP 422; backend suites pass but are not wired to the standalone client | 2026-09-28 |
-| Blue Waves | Pre-revenue; 125 tests collected (109 project + 16 vendored); one cockpit E2E test intermittently order-dependent | 2026-09-27 |
-| The four 2026 building attempts | Historical project context, not audited evidence; two are not runnable as committed | 2026-06 / 2026-09-27 |
+Beyond the pilot: solutions and systems architect, AI-governance, and
+ops-automation lead roles in contact-centre operations, workforce management, and
+learning systems — remote or freelance. I value teams that treat honest "not-ready"
+signals, auditability, and local-first privacy as features rather than blockers.
 
 ## Author
 

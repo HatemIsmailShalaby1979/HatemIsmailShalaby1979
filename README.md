@@ -101,7 +101,7 @@ Two distinct relationships are in play, and the difference matters.
 | Repository | Role in the story | State |
 |---|---|---|
 | [Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime) | The operations core | Pre-pilot, production `NOT_READY` |
-| [Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education) | Component: learning engine | Alpha, 447 collected / 0 failed on CI (run 36371517881, 2026-09-28) |
+| [Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education) | Component: learning engine | Alpha, 447 tests passed / 0 failed on CI (run 36371517881, 2026-09-28) |
 | [Study Studio](https://github.com/HatemIsmailShalaby1979/Study-Studio) | Component: local-first tutor | Working, 47 suites / 986 tests |
 | [L&D Command Center](https://github.com/HatemIsmailShalaby1979/L-D-Command-Center) | Component: desktop workstation | V1 ship in progress |
 | [LIVE Support Assistant](https://github.com/HatemIsmailShalaby1979/LIVE-Support-Assistant) | Component: explainable support | Prototype; ready for a shadow-mode pilot |
@@ -112,7 +112,7 @@ Two distinct relationships are in play, and the difference matters.
 
 **[Helix Prime](https://github.com/HatemIsmailShalaby1979/Helix-Prime)** — the operations core. Owns identity and RBAC, the Erlang C forecasting core, the CRM, the workflow engine, the event-sourced memory, and the fail-closed governance gate. Pre-pilot; **CI red on the latest run** (run `36804203269`, 2026-10-01 — the test-suite step failed; steps 9–17 skipped); last fully green run `36777053113` (2026-09-30) reported 1,951 tests, 0 failures, 19 deselected at 86.91% coverage; all six engines drive a real computation end-to-end; 9 production-only gates red by design; release `v1.1.0`. Snapshot 2026-10-01.
 
-**[Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education)** — component: learning engine. Independent repo. Designed to supply the learning foundation Helix Codex would use; **not yet wired into the core**. Alpha; 447 collected / 0 failed on CI (run 36371517881, 2026-09-28); release `v1.1.0`. Snapshot 2026-09-28.
+**[Helix Education](https://github.com/HatemIsmailShalaby1979/Helix-Education)** — component: learning engine. Independent repo. Designed to supply the learning foundation Helix Codex would use; **not yet wired into the core**. Alpha; 447 tests passed / 0 failed on CI (run 36371517881, 2026-09-28); release `v1.1.0`. Snapshot 2026-09-28.
 
 **[Study Studio](https://github.com/HatemIsmailShalaby1979/Study-Studio)** — component: local-first tutor. Independent repo. No pipeline wired to Prime today. Working; 47 suites / 986 tests; 85.71% statement coverage; CI green on main (latest run 36803605646, 2026-10-01). Snapshot 2026-10-01.
 
@@ -120,7 +120,7 @@ Two distinct relationships are in play, and the difference matters.
 
 **[LIVE Support Assistant](https://github.com/HatemIsmailShalaby1979/LIVE-Support-Assistant)** — component: explainable support. Independent repo, no shared code or runtime with Prime. Its operational signals could inform Helix Education's curriculum — designed to consume that feed; **not yet wired**. Prototype; ready for a shadow-mode pilot; on-device gate 10/10 checks; deployed-vs-local parity 39/39 identical margins; a contradictory corpus is refused at publish with HTTP 422; backend suites pass but are not wired to the standalone client. Honest limit: at 48 procedures, in-scope recall is 27.8% (84/302) at margin 0.18; at margin 0.18 it answered 6 of 52 out-of-scope public questions. Snapshot 2026-09-28.
 
-**[Blue Waves](https://github.com/HatemIsmailShalaby1979/Blue-Waves-)** — vertical: content studio. Built on the Helix Codex framework; consumes Prime as an **external client** over its contracts, never embedded. Live client relationship to Prime (HTTP/contracts). Pre-revenue; 125 tests collected (109 project + 16 vendored); one cockpit E2E test intermittently order-dependent. Snapshot 2026-09-27.
+**[Blue Waves](https://github.com/HatemIsmailShalaby1979/Blue-Waves-)** — vertical: content studio. Built on the Helix Codex framework; consumes Prime as an **external client** over its contracts, never embedded. Live client relationship to Prime (HTTP/contracts). Pre-revenue; **CI red** — the Pylint and Python-application workflows are both failing (latest run `36371615810`, 2026-09-28); 125 collected (109 project + 16 vendored); the repo README states all 109 project tests pass locally; one cockpit E2E test intermittently order-dependent. Snapshot 2026-09-27.
 
 **The four 2026 building attempts** — [WFM Forecasting Calculator](https://github.com/HatemIsmailShalaby1979/wfm-forecasting-calculator), [RTA Command Center](https://github.com/HatemIsmailShalaby1979/RTA_command_center), [CX Sentiment Sentinel](https://github.com/HatemIsmailShalaby1979/cx-sentiment-sentinel), [Dynamic Ops Automation Engine](https://github.com/HatemIsmailShalaby1979/Dynamic-Ops-Automation-Engine). Historical project context, not audited evidence; two are not runnable as committed. Their Erlang C maths, adherence thinking, KPI-decay risk scoring, and tenant/fail-closed configuration became Prime's WFM, RTA, CX, and B2B engines respectively — conceptual lineage, no shared code. Snapshot 2026-06 / 2026-09-27.
 

@@ -2,12 +2,24 @@
 
 # Hatem Ismail Shalaby
 
-**Operations Architect · AI Systems Engineer · Founder**
+**Contact Centre Operations & AI Implementation Lead | WFM & CX Transformation**
 
 </div>
 
 > [!NOTE]
 > Deterministic where a decision has consequences, audited so any action can be replayed, and fail-closed by default. On missing input or missing authority, the system refuses rather than guesses.
+
+Operations leader with 28 years of experience managing high-volume customer support,
+workforce scheduling, and service delivery across global brands including ByteDance,
+TTEC, Uber, Vodafone, and airberlin. Combines deep operating-floor judgment with
+hands-on skill building software tools that solve daily operational friction. Proven
+track record of streamlining team workflows, improving queue response times, and
+introducing practical, human-guided automation to contact center operations.
+
+**Skills**
+
+- **Operations & Workforce Leadership:** Workforce Management (Erlang C, SLA tracking, schedule adherence, forecasting), Contact Centre Queue Leadership, QA/AQA Frameworks, Incident Escalation, Zendesk, Salesforce Service Cloud.
+- **Applied Automation & Tooling:** Workflow Optimization, SOP Structuring, Human-in-the-Loop Controls, Process Automation, Python, FastAPI, Desktop Application Design, System Integration Troubleshooting.
 
 ## Status at a glance
 
@@ -32,43 +44,42 @@ A narrated two-minute walkthrough of the portfolio — the core, the components,
 
 ## The operating rule
 
-I spent twenty-eight years on the operational floor — aviation ground control, telecom
-support, and contact-centre workforce management. The lesson that survived every one
-of those jobs is that the hard part is never the model. It is the handover: who owns
-the decision, what evidence supports it, and what happens when the system is wrong.
+I spent twenty-eight years on the operational floor, and the lesson that survived
+every one of those roles is that the hard part is never the model. It is the handover:
+who owns the decision, what evidence supports it, and what happens when the system is
+wrong.
 
 So everything here is built on one rule: on missing input or missing authority, the system refuses rather than guesses. It is audited so any action can be replayed, and it is fail-closed by default. A
 generative model may help a person think, but it never sits alone in the path that
 executes.
 
-## The founder's story
+## My background
 
-I spent twenty-eight years in operations. The first fourteen were the foundation:
-ground operations and real-time traffic management at Hurghada International
-Airport, then Air Berlin, where I directed ground operations through the 2011
-regional transition and held SLA compliance under conditions that had no playbook.
-Alongside that, international logistics at Shorouk International Bookshop and hybrid
-IT operations at Nefertari American School.
+**Twenty-eight years in operations.** Operations leader with 28 years of experience
+managing high-volume customer support, workforce scheduling, and service delivery
+across global brands including ByteDance, TTEC, Uber, Vodafone, and airberlin —
+combining operating-floor judgment with hands-on skill building software tools that
+solve daily operational friction.
 
-The second fourteen were about automation. At ByteDance, Vodafone and Uber I built
-AI-driven automation for contact centres — inside other people's stacks: NLP
-pipelines that turn unstructured customer language into signal, Erlang C forecasting
-that turns volume into staffing, and the reporting layers that made both usable by
-people on the floor. I owned the handover in those systems, but the platform, the
-codebase and the roadmap were never mine.
+**TikTok LIVE (ByteDance), Cairo, Egypt | 2025 – 2026 | Multilingual Customer Support & Operations Lead.**
+At TikTok LIVE I noticed agents losing time searching fragmented, fast-changing SOPs,
+built a lookup assistant, and ran a small 2-person peer pilot that showed a substantial
+reduction in ticket handle time.
 
-In April 2026 I left that career. The switch was not from operations to software — I
-had been building inside operational software for fourteen years. It was from
-building inside other people's stacks to owning a full system end to end: my own
-architecture, my own code, my own consequences. I taught myself the remaining craft
-as I built. The first four tools were published six weeks later, in May and June
-2026. Each one took a single operational problem and solved it properly. They were
-not impressive. They were correct.
+**Career transition.** I accepted an offer from Etihad Airways for a Senior Premium
+Guest Relations role in Cairo and resigned to transition. When Etihad subsequently
+cancelled the Cairo office launch, I pivoted to full-time independent software
+development. The first tools in this portfolio are dated May–June 2026 in their
+repositories.
 
-Those four tools converged into one idea: **Helix Codex**, an accountable AI
-operating organization. Not an autonomous agent. An organization with a
-constitution, named roles with bounded authority, evidence trails, and a human at
-every consequential boundary. Helix Prime is its operations core.
+## Helix Codex
+
+Four small tools — Erlang C forecasting, real-time adherence monitoring, churn-risk
+scoring, and an intake-to-readiness pipeline — converged into one idea: **Helix
+Codex**, an accountable AI operating organization. Not an autonomous agent. An
+organization with a constitution, named roles with bounded authority, evidence
+trails, and a human at every consequential boundary. Helix Prime is its operations
+core.
 
 This work is maintained by one person, with no team and no funding. It has not been
 externally audited and it has not made revenue. Where it is unfinished, the
@@ -134,7 +145,7 @@ Two distinct relationships are in play, and the difference matters.
 
 ## What I am looking for
 
-**Looking for one design partner for a shadow-mode pilot.** If you run a contact
+**One design partner for a shadow-mode pilot.** If you run a contact
 centre, an academy, or any operation where an AI-assisted decision has
 consequences, I will deploy a governed pilot in shadow mode: the system proposes,
 your people approve, every action is replayable. The [pilot
@@ -143,14 +154,13 @@ defines the boundaries; the [evidence
 pack](https://github.com/HatemIsmailShalaby1979/Helix-Prime/blob/main/docs/portfolio/00_INDEX.md)
 shows what exists today.
 
-Beyond the pilot: solutions and systems architect, AI-governance, and
-ops-automation lead roles in contact-centre operations, workforce management, and
-learning systems — remote or freelance. I value teams that treat honest "not-ready"
-signals, auditability, and local-first privacy as features rather than blockers.
+**Roles.** Contact centre operations, workforce management, and AI-implementation
+roles — remote or freelance. I value teams that treat honest "not-ready" signals,
+auditability, and local-first privacy as features rather than blockers.
 
 ## Author
 
-**Hatem Ismail Shalaby** — Operations Architect · AI Systems Engineer · Founder
+**Hatem Ismail Shalaby** — Contact Centre Operations & AI Implementation Lead | WFM & CX Transformation
 
 - GitHub: [HatemIsmailShalaby1979](https://github.com/HatemIsmailShalaby1979)
 - LinkedIn: [hatem-shalaby-202902127](https://www.linkedin.com/in/hatem-shalaby-202902127/)

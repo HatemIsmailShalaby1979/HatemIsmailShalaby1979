@@ -61,6 +61,20 @@ across global brands including ByteDance, TTEC, Uber, Vodafone, and airberlin �
 combining operating-floor judgment with hands-on skill building software tools that
 solve daily operational friction.
 
+Twenty-seven of those years — 1998 to 2025 — ran through customer operations, service
+delivery, and international logistics, progressing from the operational floor into
+workforce management, service quality, and team leadership.
+
+| Period | Where | What it involved |
+|---|---|---|
+| 2012 – 2025 | **Contact centre & customer operations** — TTEC, Uber, Vodafone, *airberlin* | Multilingual customer support and service operations across high-volume contact centres: frontline queue ownership, workforce management (Erlang C forecasting, schedule adherence and intraday re-planning, SLA tracking), QA/AQA frameworks, incident escalation, and the reporting layers that made both visible to the floor. |
+| 2007 – 2012 | **Ground operations & real-time traffic management** — *Hurghada International Airport*, then *airberlin* | Directed ground operations and live traffic coordination through the 2011 regional transition, holding SLA compliance through the disruption without an existing playbook. This is where the real-time decision discipline that later defined the contact-centre work was formed. |
+| 2003 – 2007 | **International logistics** — *Shorouk International Bookshop* | International order handling, supplier and forwarding coordination, and cross-border delivery scheduling. |
+| 1998 – 2003 | **Hybrid IT & school operations** — *Nefertari American School* | Systems administration, user support, and equipment and network administration supporting academic operations. |
+
+*The 2012–2025 band is accurate for the engagement period; the start years shown for the earlier roles are approximate and are being confirmed against employment records.*
+
+
 **TikTok LIVE (ByteDance), Cairo, Egypt | 2025 – 2026 | Multilingual Customer Support & Operations Lead.**
 At TikTok LIVE I noticed agents losing time searching fragmented, fast-changing SOPs,
 built a lookup assistant, and ran a small 2-person peer pilot that showed a substantial

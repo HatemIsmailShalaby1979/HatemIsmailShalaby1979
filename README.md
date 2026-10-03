@@ -32,9 +32,12 @@ introducing practical, human-guided automation to contact center operations.
 > [!WARNING]  
 > **Honest boundary.** Helix Prime is pre-pilot, production `NOT_READY`, with nine production-only gates red by design. No repository here has been externally audited or certified; none has certified data isolation, a signed security review, or an assigned on-call owner. There is no legal privacy review. No revenue has been realised anywhere in the portfolio. This is not a production deployment claim.
 
-## A two-minute tour
+## A 95-second tour
 
-A narrated two-minute walkthrough of the portfolio — the core, the components, and the evidence standard.
+A narrated 95-second walkthrough of the portfolio — the core, the components, and the evidence standard.
+<!-- TODO(Hatem): paste GitHub user-attachments video URL on its own line here -->
+[Watch the film](assets/profile-demo-narrated.mp4)
+Narration is a synthetic voice.
 
 ## The operating rule
 

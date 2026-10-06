@@ -10,7 +10,7 @@
 [![last commit](https://img.shields.io/github/last-commit/HatemIsmailShalaby1979/HatemIsmailShalaby1979)](https://github.com/HatemIsmailShalaby1979/HatemIsmailShalaby1979/commits/main)
 ![status](https://img.shields.io/badge/ci-success-brightgreen?label=success%20(2026-10-05))
 
-*Measured 2026-10-06 — CI **success**; head `13f2150` (2026-10-05); HTML.*
+*Measured 2026-10-06 — CI **success**; head `4a0033b` (2026-10-05); HTML.*
 
 <!-- No static test or coverage count is shown here: a frozen
      number decays silently. Run the suite for a current figure;
